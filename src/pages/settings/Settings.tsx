@@ -8,20 +8,17 @@ import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Radio from '@mui/material/Radio';
 
-import VoicevoxSettings from './voicevox/VoicevoxSettings';
+import BottomSettings from './BottomSettings';
+import { TTSProvider } from './types';
 
 const Settings: React.FC = () => {
     const { t } = useTranslation();
 
-    const [value, setValue] = React.useState(0);
+    const [provider, setProvider] = React.useState(TTSProvider.VOICEVOX);
 
-    const contents = [<VoicevoxSettings />];
-    const [content, setContent] = React.useState(contents[value]);
-
-    const handleChange = (event: React.SyntheticEvent, newValue: string) => {
-        const v = parseInt(newValue);
-        setValue(v);
-        setContent(contents[v]);
+    const handleChange = (event: React.SyntheticEvent, newId: string) => {
+        const v: TTSProvider = parseInt(newId);
+        setProvider(v);
     };
 
     return (
@@ -30,18 +27,18 @@ const Settings: React.FC = () => {
                 <FormLabel>{t('settings.tts.provider')}</FormLabel>
                 <RadioGroup defaultValue={0} onChange={handleChange}>
                     <FormControlLabel
-                        value={0}
+                        value={TTSProvider.VOICEVOX}
                         control={<Radio />}
                         label={t('settings.tts.voicevox.label')}
                     />
                     <FormControlLabel
-                        value={1}
+                        value={TTSProvider.BOUYOMI}
                         control={<Radio />}
                         label={t('settings.tts.bouyomi.label')}
                     />
                 </RadioGroup>
             </FormControl>
-            {content}
+            <BottomSettings provider={provider} />
         </Box>
     );
 };
