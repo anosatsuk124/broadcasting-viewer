@@ -1,0 +1,5 @@
+LICENSE
+yarn.lock
+src-tauri
+dist
+node_modules
