@@ -16,7 +16,7 @@ const getEntries = () => {
     return [{ label: t('settings.tts.label'), content: <TTSConfigs /> }];
 };
 
-const Page: React.FC = () => {
+const VoicevoxSettings: React.FC = () => {
     const { t } = useTranslation();
 
     const [value, setValue] = React.useState(0);
@@ -39,4 +39,4 @@ const Page: React.FC = () => {
     );
 };
 
-export default Page;
+export default VoicevoxSettings;

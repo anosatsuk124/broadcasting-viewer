@@ -7,7 +7,7 @@ import Select, { SelectChangeEvent } from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
 import { FormHelperText } from '@mui/material';
 
-import { getVoicevoxSpeakers, Speaker } from '../../../tts/voicevox/client';
+import { getVoicevoxSpeakers, Speaker } from '../../../../tts/voicevox/client';
 
 const SelectingSpeakers: React.FC = () => {
     const { t } = useTranslation();

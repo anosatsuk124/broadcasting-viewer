@@ -9,8 +9,13 @@
     "settings": {
         "tts": {
             "label": "TTS設定",
-            "tts-provider": "TTSプロバイダ",
+            "provider": "TTSプロバイダ",
             "voicevox": {
+                "label": "VOICEVOX",
+                "selecting-speakers": "話者を選択"
+            },
+            "bouyomi": {
+                "label": "棒読みちゃん",
                 "selecting-speakers": "話者を選択"
             }
         }

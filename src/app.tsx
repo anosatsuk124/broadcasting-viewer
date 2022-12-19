@@ -7,8 +7,10 @@ import Tab from '@mui/material/Tab';
 import AppBar from '@mui/material/AppBar';
 import Typography from '@mui/material/Typography';
 
-import Settings from './pages/settings/Page';
+import Settings from './pages/settings/Settings';
 import Comments from './pages/comments/Page';
+import { Link } from '@mui/material';
+import { W } from '@tauri-apps/api/event-2a9960e7';
 
 interface LinkTabProps {
     label: string;
@@ -33,9 +35,9 @@ const NavTabs = () => {
 
     const [value, setValue] = React.useState(0);
 
-    const [content, setContent] = React.useState(<Comments />);
-
     const contents = [<Comments />, <Settings />];
+
+    const [content, setContent] = React.useState(contents[value]);
 
     const handleChange = (event: React.SyntheticEvent, newValue: number) => {
         setValue(newValue);
