@@ -1,0 +1,18 @@
+{
+    "app": {
+        "title": "ブロードキャスティングビュアー"
+    },
+    "navigation": {
+        "comments": "コメント",
+        "settings": "設定"
+    },
+    "settings": {
+        "tts": {
+            "label": "TTS設定",
+            "tts-provider": "TTSプロバイダ",
+            "voicevox": {
+                "selecting-speakers": "話者を選択"
+            }
+        }
+    }
+}
