@@ -1,5 +1,5 @@
 LICENSE
 yarn.lock
-src-tauri
+src-tauri/target
 dist
 node_modules

@@ -11,7 +11,7 @@ import Radio from '@mui/material/Radio';
 import BottomSettings from './BottomSettings';
 import { TTSProvider } from './types';
 
-const Settings: React.FC = () => {
+const TTSSettings: React.FC = () => {
     const { t } = useTranslation();
 
     const [provider, setProvider] = React.useState(TTSProvider.VOICEVOX);
@@ -24,17 +24,17 @@ const Settings: React.FC = () => {
     return (
         <Box>
             <FormControl>
-                <FormLabel>{t('settings.tts.provider')}</FormLabel>
+                <FormLabel>{t('tts-settings.tts.provider')}</FormLabel>
                 <RadioGroup defaultValue={0} onChange={handleChange}>
                     <FormControlLabel
                         value={TTSProvider.VOICEVOX}
                         control={<Radio />}
-                        label={t('settings.tts.voicevox.label')}
+                        label={t('tts-settings.tts.voicevox.label')}
                     />
                     <FormControlLabel
                         value={TTSProvider.BOUYOMI}
                         control={<Radio />}
-                        label={t('settings.tts.bouyomi.label')}
+                        label={t('tts-settings.tts.bouyomi.label')}
                     />
                 </RadioGroup>
             </FormControl>
@@ -43,4 +43,4 @@ const Settings: React.FC = () => {
     );
 };
 
-export default Settings;
+export default TTSSettings;

@@ -45,7 +45,7 @@ const SelectingSpeakers: React.FC = () => {
     return (
         <Box>
             <FormHelperText>
-                {t('settings.tts.voicevox.selecting-speakers')}
+                {t('tts-settings.tts.voicevox.selecting-speakers')}
             </FormHelperText>
             <FormControl fullWidth>
                 <Select value={speaker} onChange={handleChange}>

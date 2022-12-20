@@ -7,10 +7,9 @@ import Tab from '@mui/material/Tab';
 import AppBar from '@mui/material/AppBar';
 import Typography from '@mui/material/Typography';
 
-import Settings from './pages/settings/Settings';
+import TTSSettings from './pages/TTSSettings/TTSSettings';
 import Comments from './pages/comments/Page';
-import { Link } from '@mui/material';
-import { W } from '@tauri-apps/api/event-2a9960e7';
+import BroadcastSettings from './pages/BroadcastSettings/BroadcastSettings';
 
 interface LinkTabProps {
     label: string;
@@ -35,7 +34,7 @@ const NavTabs = () => {
 
     const [value, setValue] = React.useState(0);
 
-    const contents = [<Comments />, <Settings />];
+    const contents = [<Comments />, <BroadcastSettings />, <TTSSettings />];
 
     const [content, setContent] = React.useState(contents[value]);
 
@@ -53,7 +52,8 @@ const NavTabs = () => {
                 variant="fullWidth"
             >
                 <LinkTab label={t('navigation.comments')} />
-                <LinkTab label={t('navigation.settings')} />
+                <LinkTab label={t('navigation.broadcast-settings')} />
+                <LinkTab label={t('navigation.tts-settings')} />
             </Tabs>
             {content}
         </Box>

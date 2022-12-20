@@ -13,9 +13,9 @@ const getEntries = (provider: TTSProvider) => {
 
     switch (provider) {
         case TTSProvider.VOICEVOX:
-            return [[t('settings.tts.label'), <TTSConfigs />]];
+            return [[t('tts-settings.tts.label'), <TTSConfigs />]];
         case TTSProvider.BOUYOMI:
-            return [[t('settings.tts.label'), <Box />]];
+            return [[t('tts-settings.tts.label'), <Box />]];
         default:
             return [];
     }
@@ -46,9 +46,11 @@ const BottomSettings = (props: BottomSettingsProps) => {
                 value={entryNumber}
                 onChange={handleChangeBottomNavigation}
             >
-                <BottomNavigationAction
-                    label={entries.map((entry) => entry[0])}
-                />
+                {entries.map((entry, index) => {
+                    return (
+                        <BottomNavigationAction key={index} label={entry[0]} />
+                    );
+                })}
             </BottomNavigation>
         </Box>
     );

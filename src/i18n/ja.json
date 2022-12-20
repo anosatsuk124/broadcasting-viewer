@@ -4,9 +4,21 @@
     },
     "navigation": {
         "comments": "コメント",
-        "settings": "設定"
+        "broadcast-settings": "配信設定",
+        "tts-settings": "読み上げ設定"
     },
-    "settings": {
+    "broadcast-settings": {
+        "twitcasting": {
+            "label": "TwitCasting配信設定",
+            "client-id": "クライアントID",
+            "client-secret": "クライアントシークレット",
+            "authorize": "認証",
+            "authorized": "認証済み",
+            "unauthroized": "未認証",
+            "authorization-failed": "認証に失敗しました"
+        }
+    },
+    "tts-settings": {
         "tts": {
             "label": "TTS設定",
             "provider": "TTSプロバイダ",

@@ -1,0 +1,4 @@
+{
+    "base_url": "https://apiv2.twitcasting.tv",
+    "callback_uri": "localhost:25252"
+}
