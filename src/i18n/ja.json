@@ -9,14 +9,17 @@
     },
     "broadcast-settings": {
         "twitcasting": {
-            "label": "TwitCasting配信設定",
+            "label": "ツイキャス配信設定",
             "client-id": "クライアントID",
             "client-secret": "クライアントシークレット",
-            "authorize": "認証",
+            "auth-state": "認証状態",
+            "login": "ログイン",
+            "logout": "ログアウト",
             "authorized": "認証済み",
-            "unauthroized": "未認証",
+            "unauthorized": "未認証",
             "authorization-failed": "認証に失敗しました"
-        }
+        },
+        "save": "保存"
     },
     "tts-settings": {
         "tts": {
