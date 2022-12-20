@@ -8,7 +8,7 @@ import AppBar from '@mui/material/AppBar';
 import Typography from '@mui/material/Typography';
 
 import TTSSettings from './pages/TTSSettings/TTSSettings';
-import Comments from './pages/Comment/Page';
+import Comments from './pages/Comments/Page';
 import BroadcastSettings from './pages/BroadcastSettings/BroadcastSettings';
 
 interface LinkTabProps {
