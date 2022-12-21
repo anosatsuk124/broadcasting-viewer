@@ -70,7 +70,6 @@ const TwitcastingIntegrate: React.FC = () => {
 
     return (
         <Box>
-            <LoginInfo />
             <FormHelperText>
                 {t('broadcast-settings.twitcasting.label')}
             </FormHelperText>
@@ -84,6 +83,7 @@ const TwitcastingIntegrate: React.FC = () => {
                     onChange={handleChangeClientSecret}
                 />
             </FormControl>
+            <LoginInfo />
         </Box>
     );
 };

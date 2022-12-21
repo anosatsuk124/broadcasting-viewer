@@ -3,12 +3,16 @@ import ReactDOM from 'react-dom/client';
 
 import Router from './Router';
 
+import { Provider } from 'jotai';
+
 import './i18n/configs';
 
 import './style.css';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <React.StrictMode>
-        <Router />
+        <Provider>
+            <Router />
+        </Provider>
     </React.StrictMode>
 );

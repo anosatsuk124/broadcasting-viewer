@@ -19,7 +19,7 @@
             "unauthorized": "未認証",
             "authorization-failed": "認証に失敗しました"
         },
-        "save": "保存"
+        "save-settings": "保存"
     },
     "tts-settings": {
         "tts": {
